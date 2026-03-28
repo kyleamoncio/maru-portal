@@ -743,11 +743,69 @@
   .summary-row .sum-label { color: var(--text-secondary); }
   .summary-row .sum-val { font-family: 'DM Mono', monospace; font-weight: 500; }
 
-  /* Responsive tweaks */
-  @media (max-width: 900px) {
+  /* ══ MOBILE RESPONSIVE ══ */
+  /* Mobile-first: base styles are mobile-optimized */
+
+  /* Touch targets & spacing */
+  .btn { min-height: 44px; padding: 10px 16px; font-size: 14px; }
+  .nav-item { min-height: 48px; padding: 12px 16px; }
+  .form-control { min-height: 44px; padding: 12px 16px; font-size: 16px; }
+
+  /* Content & spacing */
+  #content { padding: 16px; }
+  .card-header { padding: 12px 16px; }
+  .card-body { padding: 16px; }
+  .page-header { padding: 0 16px 16px; flex-wrap: wrap; }
+
+  /* Typography scale */
+  .page-header-left h1 { font-size: 18px; }
+  body { font-size: 16px; }
+
+  /* Grids */
+  .stats-grid,
+  .two-col,
+  .three-col,
+  .form-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Tables */
+  .table-wrap { -webkit-overflow-scrolling: touch; }
+  thead th { font-size: 12px; padding: 8px 4px; white-space: nowrap; }
+  tbody td { padding: 12px 8px; font-size: 14px; }
+
+  /* Topbar */
+  #topbar { padding: 0 16px; gap: 8px; }
+  .page-title { font-size: 16px; }
+
+  /* PHONE < 480px */
+  @media (max-width: 479px) {
+    #content { padding: 12px; }
+    .card-header { padding: 12px; }
+    .card-body { padding: 12px; }
+    #topbar { padding: 0 12px; }
+    .page-header-left h1 { font-size: 16px; }
+    .btn { padding: 12px 16px; font-size: 16px; }
+  }
+
+  /* TABLET 480px - 899px */
+  @media (min-width: 480px) and (max-width: 899px) {
+    #content { padding: 20px; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .two-col, .three-col { grid-template-columns: 1fr; }
-    .form-grid { grid-template-columns: 1fr; }
+  }
+
+  /* DESKTOP 900px+ (original unchanged) */
+  @media (min-width: 900px) {
+    body { font-size: 14px; }
+    #content { padding: 24px; }
+    .card-header { padding: 16px 20px; }
+    .card-body { padding: 20px; }
+    #topbar { padding: 0 24px; }
+    .page-header-left h1 { font-size: 20px; }
+    .btn { min-height: auto; padding: 7px 14px; font-size: 13px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col { grid-template-columns: 1fr 1fr; }
+    .three-col { grid-template-columns: 1fr 1fr 1fr; }
+    .form-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .page-header { margin-bottom: 20px; }
   }
 </style>
 </head>

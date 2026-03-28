@@ -1,16 +1,14 @@
 # Warehouse Portal - Task Progress
 
-## Current Task: Stretch order details & preview boxes vertically
+## Current Task: Make fully mobile responsive across all devices
 
-**Status:** ✅ **Completed**
+**Status:** 🔄 **In Progress**
 
-**Changes Applied:**
-- Increased `.two-col` grid row stretch with `align-items: stretch`
-- Added `min-height: 450px` and `padding-bottom: 28px` to `#page-entry .card-body`
-- Preview `.summary-row` gets `flex: 1` for natural expansion
-- Only affects New Entry tab (`#page-entry`)
+## Breakdown:
+- [x] Create TODO.md with mobile plan tracking  
+- [x] Add mobile-first responsive CSS to index.html  
+- [ ] Test across device sizes (DevTools → iPhone/Android/iPad)  
+- [ ] Live device verification  
+- [ ] Complete & demo
 
-**Result:** Both boxes now taller, less cramped, better space utilization.
-
-**Next:** Ready for live testing. Hard refresh (Ctrl+Shift+R).
-
+**Next Step:** Implementing responsive CSS...
