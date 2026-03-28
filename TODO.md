@@ -1,15 +1,16 @@
-# Warehouse Portal - Task Complete
+# Warehouse Portal - Task Progress
 
-**Status:** ✅ Complete
+## Current Task: Stretch order details & preview boxes vertically
 
-- Fully functional static HTML/JS single-page app
-- All features implemented: Dashboard, Search, Summary, All Data, New Entry, Settings
-- Demo data, localStorage persistence, responsive design
-- Google Apps Script integration ready (add URL in Settings)
-- Product prices, buyers, filtering, charts, forms all working
+**Status:** ✅ **Completed**
 
-**Next steps (user-defined):**
-- Deploy as static site or integrate with Google Sheets via Apps Script
-- Open `index.html` in browser to use (Ctrl+Shift+R for hard refresh)
+**Changes Applied:**
+- Increased `.two-col` grid row stretch with `align-items: stretch`
+- Added `min-height: 450px` and `padding-bottom: 28px` to `#page-entry .card-body`
+- Preview `.summary-row` gets `flex: 1` for natural expansion
+- Only affects New Entry tab (`#page-entry`)
 
-No further changes required.
+**Result:** Both boxes now taller, less cramped, better space utilization.
+
+**Next:** Ready for live testing. Hard refresh (Ctrl+Shift+R).
+
